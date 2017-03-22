@@ -3,28 +3,32 @@
 <head>
 	<meta charset="utf-8">
 	<title>Nerds - Магазин готовых шаблонов</title>
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<header class="main-header">
 		<div class="container">
-			<nav class="main-navigation">
-				<div class="header-logo">
-					<a href="#"><img src="http://placehold.it/150x100" alt="Nerds"></a>
+			<div class="navigation-layout">
+				<nav class="main-navigation">
+					<div class="header-logo">
+						<a href="#"><img src="img/nerds-logo.png" width="160" height="65" alt="Nerds"></a>
+					</div>
+					<ul>
+						<li><a href="#">Студия</a></li>
+						<li><a href="#">Клиенты</a></li>
+						<li class="current"><a href="#">Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="user-block">
+					<a class="basket" href="#">Корзина</a>
 				</div>
-				<ul>
-					<li><a href="#">Студия</a></li>
-					<li><a href="#">Клиенты</a></li>
-					<li class="current"><a href="#">Магазин</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-			</nav>
-			<div class="user-block">
-				<a class="basket" href="#">Корзина</a>
 			</div>
 			<h1>Магазин готовых шаблонов</h1>	
 		</div>
 	</header>
 
+	<div class="catalog container">
 		<div class="sidebar">
 			<form action="#" method="post">
 				<div class="sidebar-item">
@@ -80,7 +84,7 @@
 			<div class="assortment-list">
 				<div class="assortment-item">
 					<div class="decoration"></div>
-					<img src="http://placehold.it/150x100" alt="Sedona">
+					<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
 					<div class="assortment-info">
 						<h3>Sedona</h3>
 						<p>Информационный сайт для туристов</p>
@@ -89,7 +93,7 @@
 				</div>	
 				<div class="assortment-item">
 					<div class="decoration"></div>
-					<img src="http://placehold.it/150x100" alt="Pink App">
+					<img src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
 					<div class="assortment-info">
 						<h3>Pink App</h3>
 						<p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -98,7 +102,7 @@
 				</div>
 				<div class="assortment-item">
 					<div class="decoration"></div>
-					<img src="http://placehold.it/150x100" alt="Barbershop">
+					<img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
 					<div class="assortment-info">
 						<h3>Barbershop</h3>
 						<p>Сайт салоны красоты. Для мужчин, да.</p>
@@ -107,7 +111,7 @@
 				</div>
 				<div class="assortment-item">
 					<div class="decoration"></div>
-					<img src="http://placehold.it/150x100" alt="Mishka">
+					<img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
 					<div class="assortment-info">
 						<h3>Mishka</h3>
 						<p>Интернет-магазин вязаных игрушек</p>
@@ -116,7 +120,7 @@
 				</div>
 				<div class="assortment-item">
 					<div class="decoration"></div>
-					<img src="http://placehold.it/150x100" alt="A Plus">
+					<img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
 					<div class="assortment-info">
 						<h3>A Plus</h3>
 						<p>Лендинг курсов повышения квалификации</p>
@@ -125,7 +129,7 @@
 				</div>
 				<div class="assortment-item">
 						<div class="decoration"></div>
-						<img src="http://placehold.it/150x100" alt="">
+						<img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
 						<div class="assortment-info">
 							<h3>Кваст</h3>
 							<p>Промо-сайт производителя крафтового кваса</p>
@@ -134,12 +138,55 @@
 				</div>
 			</div>
 			<div class="paginator">
-				<a href="#" class="active">1</a>
-				<a href="#">2</a>
-				<a href="#">3</a>
-				<a href="#">следующая</a>
+				<a href="#" class="page active">1</a>
+				<a href="#" class="page">2</a>
+				<a href="#" class="page">3</a>
+				<a href="#" class="page next">следующая</a>
 			</div>
 		</div>
+	</div>
+
+	<footer class="page-footer">
+		<div class="footer-map">
+			<a href="#"><img src="img/map.png" width="1440" height="416" alt="Карта"></a>
+			<div class="footer-contacts">
+				<h3>Nёrds design studio</h3>
+				<p>191186, Санкт-Петербург, 
+				ул. Б. Конюшенная, д. 19/8</p>
+				<p>тел. +7 (812) 275-75-75</p>
+				<a href="#" class="btn">Напишите нам</a>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="footer-socials">
+				<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+				<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+				<a href="#" class="social-btn social-btn-inst">Инстаграмм</a>
+			</div>
+			<div class="footer-text">
+				<p>Давайте дружить, это выгодно!</p>
+				<p>Скидка 10% для друзей из социальных сетей.</p>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal-feedback">
+		<p>Напишите нам</p>
+		<button class="modal-close" type="button" name="close">Закрыть</button>
+		<form action="#" method="post">
+			<div class="half-width">
+				<label for="fullname-field">Ваше имя:</label>
+				<input type="text" name="fullname" id="fullname-field" placeholder="Представтесь, пожалуйста">
+			</div>
+			<div class="half-width">
+				<label for="email-field">Ваш e-mail:</label>
+				<input type="email" name="email" id="email-field" placeholder="Для отправки ответа">
+			</div>
+			<label for="review-field">Текст письма:</label>
+			<textarea name="review" id="review-field" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+			<input type="submit" value="Отправить">
+		</form>
+	</div>
 	
 </body>
 </html>

@@ -1,0 +1,157 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	width: 1440px;
+	font-size: 16px;
+	line-height: 24px;
+	color: #283136;
+	font-weight: normal;
+	font-family: "Roboto", "Arial", sans-serif;
+}
+
+h1 {
+	font-size: 55px;
+	line-height: 55px;
+	color: #000000;
+	font-weight: normal;
+	font-family: "Roboto", "Arial", sans-serif;
+}
+
+h2 {
+	font-size: 24px;
+	line-height: 30px;
+	color: #000000;
+	font-weight: bold;
+	font-family: "Roboto", "Arial", sans-serif;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	/*background: violet;*/
+}
+
+.main-header {
+	min-height: 545px;
+	margin-bottom: 80px;
+	padding-top: 50px;
+	background: MediumAquamarine;
+}
+.navigation-layout {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-navigation {
+	width: 960px;
+	background: pink;
+}
+
+.user-block {
+	width: 160px;
+	background: olive;
+}
+
+.slide {
+	display: none;
+}
+
+.slide:nth-of-type(1) {
+	display: block;
+}
+
+.offer-items {
+	display: flex;
+	margin-bottom: 40px;
+	padding-bottom: 80px;
+	/*	justify-content: space-between;*/
+	background: lightblue;
+}
+
+.offer-item {
+	width: 300px;
+	margin-right: 100px;
+	background: PaleTurquoise;
+}
+
+.promo {
+	display: flex;
+	padding-bottom: 70px;
+}
+
+.adv-items {
+	display: flex;
+}
+
+.sites {
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+
+.page-footer {
+}
+
+.footer-map {
+	position: relative;
+}
+
+.footer-contacts {
+	position: absolute;
+	top: 54px;
+	left: 140px;
+}
+
+.modal-feedback {
+	display: none;
+}
+
+.footer-bottom {
+	display: flex;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.footer-socials {
+	width: 260px;
+	margin-right: 140px;
+}
+
+.footer-text {
+	width: 640px;
+}
+
+.catalog {
+	display: flex;
+	justify-content: space-between;
+	background: MistyRose;
+}
+
+.sidebar {
+	width: 260px;
+}
+
+.assortment {
+	width: 760px;
+	margin-bottom: 60px;
+}
+
+.assortment-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 60px;
+}
+
+.assortment-item {
+	width: 360px;
+}
