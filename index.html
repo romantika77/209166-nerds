@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Нёрдс</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
@@ -15,7 +16,7 @@
 						<div class="header-logo">
 							<a><img src="img/nerds-logo.png" width="160" height="65" alt="Nerds"></a>
 						</div>
-						<ul>
+						<ul class="menu">
 							<li><a href="#">Студия</a></li>
 							<li><a href="#">Клиенты</a></li>
 							<li><a href="#">Магазин</a></li>
@@ -67,26 +68,26 @@
 					<img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
 					<h2>Веб-сайты</h2>
 					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-					<a href="#" class="btn">Заказать</a>
+					<a href="#" class="btn btn-sites">Заказать</a>
 				</div>
 				<div class="offer-item">
 					<img src="img/illustration-2.png" width="300" height="146" alt="Приложения">
 					<h2>Приложения</h2>
 					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-					<a href="#" class="btn">Заказать</a>
+					<a href="#" class="btn btn-apps">Заказать</a>
 				</div>
 				<div class="offer-item">
 					<img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
 					<h2>Презентации</h2>
 					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-					<a href="#" class="btn">Заказать</a>
+					<a href="#" class="btn btn-show">Заказать</a>
 				</div>
 			</div>
 			<div class="promo">
-				<div class="prpmo-content">
-					<p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+				<div class="promo-content">
+					<p class="title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
 					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-					<p>Выполняем заказы на разработку:</p>
+					<h3>Выполняем заказы на разработку:</h3>
 					<ul>
 						<li>Веб-сайтов любой сложности</li>
 						<li>Мобильных приложений для iOS и Android</li>
@@ -98,52 +99,64 @@
 						<img src="img/nerds-illustration.png" width="360" height="208" alt="Nerds">
 					</div>
 					<div class="adv-percent">
-						<p>с 2004 года Любим точность во всем:</p>
+						<p class="title">с 2004 года Любим точность во всем:</p>
 						<div class="adv-items">
 							<div class="adv-item">
-								<p>146%</p>
-								<p>Уровень самоотдачи</p>
+								<p class="percent">146<sup>%</sup></p>
+								<span>Уровень самоотдачи</span>
 							</div>
 							<div class="adv-item">
-								<p>100%</p>
-								<p>Соблюдение сроков</p>
+								<p class="percent">100<sup>%</sup></p>
+								<span>Соблюдение сроков</span>
 							</div>
 							<div class="adv-item">
-								<p>50%</p>
-								<p>Минимальная предоплата</p>
+								<p class="percent">50<sup>%</sup></p>
+								<span>Минимальная предоплата</span>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
 			<div class="sites">
-				<img src="img/html-logo.png" width="199" height="68" alt="Htmlacademy">
-				<img src="img/borodinski-logo.png" width="209" height="90" alt="Borodinski">
-				<img src="img/pink-logo.png" width="185" height="52" alt="Pink">
-				<img src="img/mishka-logo.png" width="173" height="84" alt="Mishka">
+				<div class="site site-1">
+					<a href="#"><img src="img/html-logo.png" width="199" height="68" alt="Htmlacademy"></a>
+				</div>
+				<div class="site site-2">
+					<a href="#"><img src="img/borodinski-logo.png" width="209" height="90" alt="Borodinski"></a>
+				</div>
+				<div class="site site-3">
+					<a href="#"><img src="img/pink-logo.png" width="185" height="52" alt="Pink"></a>
+				</div>
+				<div class="site site-4">
+					<a href="#"><img src="img/mishka-logo.png" width="173" height="84" alt="Mishka"></a>
+				</div>
+				
 			</div>
 		</main>
 
 		<footer class="page-footer">
-			<div class="footer-map">
-				<a href="#"><img src="img/map.png" width="1440" height="416" alt="Карта"></a>
-				<div class="footer-contacts">
-					<h3>Nёrds design studio</h3>
-					<p>191186, Санкт-Петербург, 
-					ул. Б. Конюшенная, д. 19/8</p>
-					<p>тел. +7 (812) 275-75-75</p>
-					<a href="#" class="btn">Напишите нам</a>
+			<div class="container">
+				<div class="footer-map">
+					<!-- <a href="#"><img src="img/map.png" width="1440" height="416" alt="Карта"></a> -->
+					<div class="footer-contacts">
+						<h3>Nёrds design studio</h3>
+						<p>191186, Санкт-Петербург, 
+						ул. Б. Конюшенная, д. 19/8</p>
+						<p>тел. +7 (812) 275-75-75</p>
+						<a href="#" class="btn feedback">Напишите нам</a>
+					</div>
 				</div>
-			</div>
-			<div class="footer-bottom">
-				<div class="footer-socials">
-					<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-					<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-					<a href="#" class="social-btn social-btn-inst">Инстаграмм</a>
-				</div>
-				<div class="footer-text">
-					<p>Давайте дружить, это выгодно!</p>
-					<p>Скидка 10% для друзей из социальных сетей.</p>
+				<div class="footer-bottom">
+					<div class="footer-social">
+						<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+						<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+						<a href="#" class="social-btn social-btn-inst">Инстаграмм</a>
+					</div>
+					<div class="footer-text">
+						<b>Давайте дружить, это выгодно!</b>
+						<p>Скидка 10% для друзей из социальных сетей.</p>
+					</div>
 				</div>
 			</div>
 		</footer>
