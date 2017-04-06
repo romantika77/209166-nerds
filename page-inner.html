@@ -8,17 +8,18 @@
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+
 	<header class="main-header">
 		<div class="container">
 			<div class="navigation-layout">
 				<nav class="main-navigation">
 					<div class="header-logo">
-						<a href="#"><img src="img/nerds-logo.png" width="160" height="65" alt="Nerds"></a>
+						<a href="index.html"><img src="img/nerds-logo.png" width="160" height="65" alt="Nerds"></a>
 					</div>
-					<ul>
+					<ul class="menu">
 						<li><a href="#">Студия</a></li>
 						<li><a href="#">Клиенты</a></li>
-						<li class="current"><a href="#">Магазин</a></li>
+						<li><a class="current">Магазин</a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>
 				</nav>
@@ -32,9 +33,9 @@
 
 	<div class="catalog container">
 		<div class="sidebar">
-			<form action="#" method="post">
-				<div class="sidebar-item">
-					<h3>Стоимость</h3>
+			<form action="https://echo.htmlacademy.ru" method="post">
+				<div class="sidebar-range-item">
+					<h3>Стоимость:</h3>
 					<div class="range-filter">
 						<div class="range-controls">
 							<div class="scale">
@@ -45,15 +46,15 @@
 						</div>
 						<div class="price-controls">
 							<label class="min-price">от<input name="min-price" type="text" value="0"></label>
-							<label class="max-price">до<input name="max-price" type="text" value="15000"></label>
+							<label class="max-price">до<input name="max-price" type="text" value="15 000"></label>
 						</div>
 					</div>
 				</div>
 				<div class="sidebar-item">
 					<h3>Сетка:</h3>
-					<input type="radio" id="radio-1" name="net" value="adaptive" checked>
+					<input type="radio" id="radio-1" name="net" value="adaptive" checked disabled>
 					<label for="radio-1">Адаптивная</label>
-					<input type="radio" id="radio-2" name="net" value="fixed">
+					<input type="radio" id="radio-2" name="net" value="fixed" disabled>
 					<label for="radio-2">Фиксированная</label>
 					<input type="radio" id="radio-3" name="net" value="rubber">
 					<label for="radio-3">Резиновая</label>
@@ -64,28 +65,29 @@
 					<label for="checkbox-1">Слайдер</label>
 					<input type="checkbox" id="checkbox-2" name="feature" value="advantage">
 					<label for="checkbox-2">Блок преимуществ</label>
-					<input type="checkbox" id="checkbox-3" name="feature" value="news" checked>
+					<input type="checkbox" id="checkbox-3" name="feature" value="news" checked disabled>
 					<label for="checkbox-3">Новости</label>
-					<input type="checkbox" id="checkbox-4" name="feature" value="gallery">
+					<input type="checkbox" id="checkbox-4" name="feature" value="gallery" disabled>
 					<label for="checkbox-4">Галерея</label>
 					<input type="checkbox" id="checkbox-5" name="feature" value="basket">
 					<label for="checkbox-5">Корзина</label>
 				</div>
-				<input type="submit" class="btn" value="Показать">
+				<input type="submit" class="btn btn-submit" value="Показать">
 			</form>
 		</div>
 		<div class="assortment">
 			<div class="assortment-filter">
 				<h3>Сортировать:</h3>
-				<a href="#" class="active">По цене</a>
-				<a href="#">По типу</a>
-				<a href="#">По названию</a>
-				<a href="#" class="arrow arrow-down active">По убыванию</a>
-				<a href="#" class="arrow arrow-up">По возрастанию</a>
+				<div class="assortment-selection">
+					<a href="#" class="active">По цене</a>
+					<a href="#">По типу</a>
+					<a href="#">По названию</a>
+					<a href="#" class="arrow arrow-down active">По убыванию</a>
+					<a href="#" class="arrow arrow-up">По возрастанию</a>
+				</div>
 			</div>
 			<div class="assortment-list">
 				<div class="assortment-item">
-					<div class="decoration"></div>
 					<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
 					<div class="assortment-info">
 						<h3>Sedona</h3>
@@ -94,7 +96,6 @@
 					</div>
 				</div>	
 				<div class="assortment-item">
-					<div class="decoration"></div>
 					<img src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
 					<div class="assortment-info">
 						<h3>Pink App</h3>
@@ -103,7 +104,6 @@
 					</div>
 				</div>
 				<div class="assortment-item">
-					<div class="decoration"></div>
 					<img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
 					<div class="assortment-info">
 						<h3>Barbershop</h3>
@@ -112,7 +112,6 @@
 					</div>
 				</div>
 				<div class="assortment-item">
-					<div class="decoration"></div>
 					<img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
 					<div class="assortment-info">
 						<h3>Mishka</h3>
@@ -121,7 +120,6 @@
 					</div>
 				</div>
 				<div class="assortment-item">
-					<div class="decoration"></div>
 					<img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
 					<div class="assortment-info">
 						<h3>A Plus</h3>
@@ -130,7 +128,6 @@
 					</div>
 				</div>
 				<div class="assortment-item">
-						<div class="decoration"></div>
 						<img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
 						<div class="assortment-info">
 							<h3>Кваст</h3>
@@ -140,7 +137,7 @@
 				</div>
 			</div>
 			<div class="paginator">
-				<a href="#" class="page active">1</a>
+				<a class="page active">1</a>
 				<a href="#" class="page">2</a>
 				<a href="#" class="page">3</a>
 				<a href="#" class="page next">следующая</a>
@@ -148,47 +145,52 @@
 		</div>
 	</div>
 
-	<footer class="page-footer">
-		<div class="footer-map">
-			<a href="#"><img src="img/map.png" width="1440" height="416" alt="Карта"></a>
-			<div class="footer-contacts">
-				<h3>Nёrds design studio</h3>
-				<p>191186, Санкт-Петербург, 
-				ул. Б. Конюшенная, д. 19/8</p>
-				<p>тел. +7 (812) 275-75-75</p>
-				<a href="#" class="btn">Напишите нам</a>
+		<footer class="page-footer">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.396461306528!2d30.323083!3d59.938794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1491383214387" width="1640" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div class="container">
+				<div class="footer-map">
+					<div class="footer-contacts">
+						<h3>Nёrds design studio</h3>
+						<p>191186, Санкт-Петербург, 
+						ул. Б. Конюшенная, д. 19/8</p>
+						<p>тел. +7 (812) 275-75-75</p>
+						<a href="#" class="btn feedback">Напишите нам</a>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="footer-social">
+						<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+						<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+						<a href="#" class="social-btn social-btn-inst">Инстаграмм</a>
+					</div>
+					<div class="footer-text">
+						<b>Давайте дружить, это выгодно!</b>
+						<p>Скидка 10% для друзей из социальных сетей.</p>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="footer-bottom">
-			<div class="footer-social">
-				<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-				<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-				<a href="#" class="social-btn social-btn-inst">Инстаграмм</a>
-			</div>
-			<div class="footer-text">
-				<p>Давайте дружить, это выгодно!</p>
-				<p>Скидка 10% для друзей из социальных сетей.</p>
-			</div>
-		</div>
-	</footer>
+		</footer>
 
-	<div class="modal-feedback">
-		<p>Напишите нам</p>
-		<button class="modal-close" type="button" name="close">Закрыть</button>
-		<form action="#" method="post">
-			<div class="half-width">
-				<label for="fullname-field">Ваше имя:</label>
-				<input type="text" name="fullname" id="fullname-field" placeholder="Представтесь, пожалуйста">
-			</div>
-			<div class="half-width">
-				<label for="email-field">Ваш e-mail:</label>
-				<input type="email" name="email" id="email-field" placeholder="Для отправки ответа">
-			</div>
-			<label for="review-field">Текст письма:</label>
-			<textarea name="review" id="review-field" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-			<input type="submit" value="Отправить">
-		</form>
-	</div>
+		<div class="modal-feedback">
+			<p>Напишите нам</p>
+			<button class="modal-close" type="button" name="close" aria-label="Закрыть"></button>
+			<form action="https://echo.htmlacademy.ru" method="post">
+				<div class="modal-top">
+					<div class="half-width">
+						<label for="fullname-field">Ваше имя:</label>
+						<input type="text" name="fullname" id="fullname-field" placeholder="Представьтесь, пожалуйста">
+					</div>
+					<div class="half-width">
+						<label for="email-field">Ваш e-mail:</label>
+						<input type="email" name="email" id="email-field" placeholder="Для отправки ответа">
+					</div>
+				</div>
+				<label for="review-field">Текст письма:</label>
+				<textarea name="review" id="review-field" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+				<input class="btn" type="submit" value="Отправить">
+			</form>
+		</div>
 	
-</body>
+		<script src="js/form.js"></script>
+	</body>
 </html>
